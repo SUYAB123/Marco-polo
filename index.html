@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="App.js" defer></script>
+    
+</head>
+<body>
+    <div class="container">
+        <section class="tools">
+            <div class="row">
+                <label class="title">Shapes.</label>
+                <ul class="options">
+                    <li class="option tool" id="rectangle">
+                        <img src="Icon\rect1.png" alt="rect2">
+                        <span>Rectangle</span>
+                    </li>
+                    <li class="option tool" id="circle">
+                        <img src="Icon\circle.png" alt="circle">
+                        <span>Circle</span>
+                    </li>
+                    <li class="option tool" id="triangle">
+                        <img src="Icon\triangle.png" alt="rect2">
+                        <span>Triangle</span>
+                    </li>
+                    <li class="option ">
+                        
+                        <input type="checkbox" id="fill-color">
+                        <label for="fill-color" >Fill Color</label>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="row">
+                <label class="title">Options.</label>
+                <ul class="options">
+                    <li class="option active tool" id="pen">
+                        <img src="Icon/pen.png" alt="pen"><span>Pen</span>
+                    </li>
+                    <li class="option tool" id="eraser"">
+                        <img src="Icon/eraser.png" alt="pen"><span>Eraser</span>
+                    </li>
+                    <li class="option">
+                        <input type="range" id="size-slider" min="1" max="30" value="5">
+                    </li>
+
+                </ul>
+            </div>
+            <div class="row colors">
+                
+                <input type="color" id="favcolor" name="favcolor" value="#0000">
+                <label for="favcolor">Colors</label>
+                
+            </div>
+            <div class="row buttons">
+                <button class="clear-canvas">Clear Convas</button>
+                <button class="save-image">Save As Image</button>
+            </div>
+        </section>
+        <section class="draw">
+            <canvas></canvas>
+        </section>
+    </div>
+</body>
+</html>
